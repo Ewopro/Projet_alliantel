@@ -4,7 +4,7 @@
 <?php
 
 try{
-		$link = new PDO('mysql:host=localhost:3306;dbname=alliantel','root', '');
+		$link = new PDO('mysql:host=localhost:3306;dbname='','', '');
 	} catch(PDOExecption $e) {
 		print "Erreur !: ".$e->getMessage()."<br />";
 		die();
@@ -27,7 +27,7 @@ $error_complete = 0;
 if(isset($_POST['send'])){
 
 try{
-		$link = new PDO('mysql:host=localhost:3306;dbname=alliantel','root', '');
+		$link = new PDO('mysql:host=localhost:3306;dbname=','', '');
 	} catch(PDOExecption $e) {
 		print "Erreur !: ".$e->getMessage()."<br />";
 		die();
