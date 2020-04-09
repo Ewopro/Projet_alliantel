@@ -1,8 +1,8 @@
 <?php
 
 try {
-    $link = new PDO('mysql:host=localhost;dbname=alliantel',
-	'root', '');
+    $link = new PDO('mysql:host=localhost;dbname='',
+	'', '');
 	$sql = "SELECT*FROM commandes_mb ORDER BY A" ;
 	$stmt = $link->prepare($sql);
 	$stmt-> execute();
