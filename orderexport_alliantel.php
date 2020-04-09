@@ -1,8 +1,8 @@
 <?php
 // code d'affichage de la table orderexport_alliantel
 try {
-    $link = new PDO('mysql:host=localhost;dbname=alliantel',
-	'root', '');
+    $link = new PDO('mysql:host=localhost;dbname=',
+	'', '');
 	$sql = "SELECT*FROM orderexport_alliantel ORDER BY A" ;
 	$stmt = $link->prepare($sql);
 	$stmt-> execute();
